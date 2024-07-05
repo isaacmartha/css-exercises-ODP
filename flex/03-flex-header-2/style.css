@@ -20,6 +20,7 @@ body {
   border-radius: 50%;
   width: 48px;
   height: 48px;
+  display: inline-block;
 }
 
 .logo {
@@ -27,6 +28,8 @@ body {
   font-size: 32px;
   font-weight: 900;
   font-style: italic;
+   margin-left: 10px;
+   display: inline-block;
 }
 
 button {
@@ -41,8 +44,36 @@ a {
   /* this removes the line under our links */
   text-decoration: none;
   color: rebeccapurple;
+  padding: 8px;
+  flex-direction: row;
+  align-items: baseline;
 }
 
 ul {
   list-style-type: none;
+  justify-content: flex-start;
+  align-items: center;
+  display: inline-block;
+  flex-grow: 4;
+}
+
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+}
+
+ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 16px;
+}
+
+.left, .right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
